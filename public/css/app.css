@@ -4,12 +4,10 @@
 }
 /* *site */
 
-a
-{
+
+a{
     text-decoration: none;
 }
-
-/* * */
 
 /* *header  */
 
@@ -66,3 +64,103 @@ header>img{
 }
 
 /* * */
+
+/* * siction : mid 1 */
+
+.mid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.image-transform{
+    background-image: url(../images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.iamge-stand-out{
+    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.image-graphic-design{
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.image-photography{
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+.image-graphic-design > .type , .image-photography > .type{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    padding-bottom: 15%;
+}
+.image-graphic-design > .type > p , .image-photography > .type > p{
+    text-align: center;
+    width: 57%;
+    line-height: 2vw;
+}
+.mid1 > .type1 , .type2{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: center;
+    padding-left: 5vw;
+}
+.type1 > h1 , .type2 > h1{
+    width: 60%;
+}
+.type1 > p , .type2 > p{
+    width: 75%;
+    line-height: 2vw;
+    color: rgba(0, 0, 0, 0.691);
+}
+
+.type1 > a , .type2 > a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 30%;
+    position: relative;
+
+}
+.type1 > a::before {
+    content: '';
+    width: 120px;
+    height: 8px;
+    background-color: rgba(255, 255, 0, 0.15);
+    position: absolute;
+    bottom: 0 ;
+    right: 24%;
+    border-radius: 50px;
+}
+.type2 > a::before{
+    content: '';
+    width: 120px;
+    height: 8px;
+    background-color: rgba(255, 0, 0, 0.15);
+    position: absolute;
+    bottom: 0 ;
+    right: 24%;
+    border-radius: 50px;
+}
+
+/* * */
+
+
