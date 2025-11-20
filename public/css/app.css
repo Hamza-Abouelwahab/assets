@@ -2,6 +2,67 @@
     margin: 0px;
     padding: 0px;
 }
-main {}
+/* *site */
 
+a
+{
+    text-decoration: none;
+}
 
+/* * */
+
+/* *header  */
+
+header
+{
+
+    background-image: url(../images/desktop/image-header.jpg);
+    background-position: bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 2vw;
+    align-items: center;
+    
+    /* background-color: blueviolet; */
+}
+
+nav>div{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 2vw;
+    /* background-color: aqua; */
+
+}
+
+nav>div>a
+{
+    color: white;
+}
+
+nav>div>button
+{
+    padding: 1.5vh 2vw;
+    border: none;
+    border-radius: 25px;
+}
+
+header>h1
+{
+    padding-top: 5vh;
+    color: white;
+}
+
+header>img{
+    
+    padding-top: 5vh;
+}
+
+/* * */
