@@ -144,10 +144,10 @@ header>img{
     content: '';
     width: 120px;
     height: 8px;
-    background-color: rgba(255, 255, 0, 0.15);
+    background-color: rgba(255, 255, 0, 0.208);
     position: absolute;
     bottom: 0 ;
-    right: 24%;
+    right:3.2vw;
     border-radius: 50px;
 }
 .type2 > a::before{
@@ -157,7 +157,7 @@ header>img{
     background-color: rgba(255, 0, 0, 0.15);
     position: absolute;
     bottom: 0 ;
-    right: 24%;
+    right: 3.2vw;
     border-radius: 50px;
 }
 
