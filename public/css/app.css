@@ -27,8 +27,6 @@ nav{
     justify-content: space-between;
     padding: 6vh 2vw;
     align-items: center;
-    
-    /* background-color: blueviolet; */
 }
 
 nav>div{
@@ -68,65 +66,42 @@ header>img{
 /* * siction : mid 1 */
 
 .mid1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+display: grid;
+grid-template-rows: 1fr;
+overflow: hidden;
 }
+.box{
+    display: flex;
+    width: 100vw;
+}
+
 .image-transform{
     background-image: url(../images/desktop/image-transform.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100vw;
 }
 .iamge-stand-out{
     background-image: url(../images/desktop/image-stand-out.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100vw;
 }
-.image-graphic-design{
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    
-}
-.image-photography{
-    background-image: url(../images/desktop/image-photography.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-
-}
-.image-graphic-design > .type , .image-photography > .type{
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-    align-items: center;
-    padding-bottom: 15%;
-}
-.image-graphic-design > .type > p , .image-photography > .type > p{
-    text-align: center;
-    width: 57%;
-    line-height: 2vw;
-}
-.mid1 > .type1 , .type2{
+.type1 , .type2{
     display: flex;
     flex-direction: column;
     gap: 2vw;
     justify-content: center;
-    padding-left: 5vw;
+    padding-left: 10vw;
+    width: 80vw;
 }
 .type1 > h1 , .type2 > h1{
     width: 60%;
 }
 .type1 > p , .type2 > p{
-    width: 75%;
+    width: 85%;
     line-height: 2vw;
     color: rgba(0, 0, 0, 0.691);
 }
@@ -142,36 +117,72 @@ header>img{
 }
 .type1 > a::before {
     content: '';
-    width: 120px;
+    width: 11vw;
     height: 8px;
     background-color: rgba(255, 255, 0, 0.208);
     position: absolute;
     bottom: 0 ;
-    right:3.2vw;
+    right: 1.2em;
     border-radius: 50px;
 }
 .type2 > a::before{
     content: '';
-    width: 120px;
+    width: 11vw;
     height: 8px;
     background-color: rgba(255, 0, 0, 0.15);
     position: absolute;
     bottom: 0 ;
-    right: 3.2vw;
+    right: 1.2em;
     border-radius: 50px;
 }
 
-/* * */
+.image-graphic-design{
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.image-photography{
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.image-graphic-design > .type , .image-photography > .type{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    padding-bottom: 15%;
+}
+.image-graphic-design > .type > p , .image-photography > .type > p{
+    text-align: center;
+    width: 57%;
+    line-height: 2vw;
+}
+
+
+/* *footer */
 footer{
     padding: 4vw 0;
     background-color: #90d4c5;
     display: grid;
     justify-items: center;
-
 }
 footer > img {
-    /* width: 15vw; */
-    fill: #2c7566;
+    width: 15vw;
+    filter: invert(45%) sepia(10%) saturate(1300%) hue-rotate(121deg) brightness(88%) contrast(90%);
+    
 }
 footer > nav{
     display: flex;
@@ -185,11 +196,6 @@ footer > div {
     display: flex;
     gap: 3vw;
 }
-
-
-
-
-
 /* *mid2 */
 
 .mid2
@@ -265,3 +271,159 @@ footer > div {
 }
 
 /* * */
+
+/* ! media */
+@media (max-width:480px) {
+    main > .mid1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .image-transform{
+    background-image: url(../images/mobile/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.iamge-stand-out{
+    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.image-graphic-design{
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.image-photography{
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.box{
+    flex-direction: column;
+}
+.reverse{
+    flex-direction: column-reverse;
+}
+.type1 , .type2{
+    width: 100%;
+    height: 100%;
+    gap: 8vw;
+    align-items: center;
+    padding: 0 0;
+}
+.type1 > h1 , .type2 > h1{
+    width: 60vw;
+    text-align: center;
+}
+.type1 > p {
+    width: 70vw;
+    line-height: 5vw;
+    text-align: center;
+}
+.type2 > p{
+    width: 80vw;
+    line-height: 5vw;
+    text-align: center;
+}
+.type1 > a , .type2 > a{
+    width: 100%;
+    text-align: center;
+}
+.type1 > a::before {
+    content: '';
+    width: 30vw;
+    height: 2vw;
+    background-color: rgba(255, 255, 0, 0.208);
+    position: absolute;
+    bottom: 0 ;
+    right: 35vw;
+    border-radius: 50px;
+}
+.type2 > a::before{
+    content: '';
+    width: 30vw;
+    height: 2vw;
+    background-color: rgba(255, 0, 0, 0.15);
+    position: absolute;
+    bottom: 0 ;
+    right: 35vw;
+    border-radius: 50px;
+}
+
+.image-graphic-design{
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.image-photography{
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.image-graphic-design > .type , .image-photography > .type{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    align-items: center;
+    padding-bottom: 20vw;
+}
+.image-graphic-design > .type > p , .image-photography > .type > p{
+    text-align: center;
+    width: 80vw;
+    line-height: 6vw;
+}
+/* *footer */
+footer{
+    padding: 10vw 0;
+    background-color: #90d4c5;
+    justify-items: center;
+
+    
+
+}
+footer > img{
+    width: 35vw;
+}
+footer > nav{
+    display: flex;
+    gap: 10vw;
+}
+footer > nav > a{
+    color:#2c7566;
+}
+footer > div {
+    padding-top: 2vw;
+    display: flex;
+    gap: 8vw;
+}
+
+
+
+
+
+
+}
