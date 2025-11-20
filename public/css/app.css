@@ -162,6 +162,31 @@ header>img{
 }
 
 /* * */
+footer{
+    padding: 4vw 0;
+    background-color: #90d4c5;
+    display: grid;
+    justify-items: center;
+
+}
+footer > img {
+    /* width: 15vw; */
+    fill: #2c7566;
+}
+footer > nav{
+    display: flex;
+    gap: 4vw;
+}
+footer > nav > a{
+    color:#2c7566;
+}
+footer > div {
+    padding-top: 2vw;
+    display: flex;
+    gap: 3vw;
+}
+
+
 
 
 
