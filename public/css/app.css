@@ -38,7 +38,7 @@ button:active
     color: white;
     }
 
-nav
+.hnav
 {
     padding-inline:3vw ;
 }
@@ -203,6 +203,8 @@ footer > img {
     
 }
 footer > nav{
+        padding: 6vh 2vw;
+
     display: flex;
     gap: 4vw;
 }
@@ -453,7 +455,7 @@ header
     background-image: url(../images/mobile/image-header.jpg);
 }
 
-nav
+.hnav
 {
     flex-direction: column;
     padding-inline: 7vw;
@@ -536,6 +538,31 @@ header>img
 
 /* * */
 
+/* *mid3 */
+.mid3
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
 
+.mid3>*
+{
+    height: 30vh;
+    
+}
+
+.food1{
+    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+}
+.food2{
+    background-image: url(../images/mobile/image-gallery-orange.jpg);
+}
+.food3{
+    background-image: url(../images/mobile/image-gallery-cone.jpg);
+}
+.food4{
+    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+}
+/*  */
 
 }
