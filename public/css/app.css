@@ -22,28 +22,46 @@ header
     text-align: center;
 }
 
-nav{
+
+#ham-button
+{
+    display: none;
+}
+label>*
+{
+    display: none;
+}
+
+button:active
+{
+    background-color: rgba(255, 255, 255, 0.274);
+    color: white;
+    }
+
+nav
+{
+    padding-inline:3vw ;
+}
+.logo{
     display: flex;
     justify-content: space-between;
-    padding: 6vh 2vw;
+    padding-block: 6vh ;
     align-items: center;
 }
 
-nav>div{
+.links{
     display: flex;
     align-items: center;
     color: white;
     gap: 2vw;
-    /* background-color: aqua; */
-
 }
 
-nav>div>a
+.links>a
 {
     color: white;
 }
 
-nav>div>button
+.links>button
 {
     padding: 1.5vh 2vw;
     border: none;
@@ -58,7 +76,7 @@ header>h1
 
 header>img{
     
-    padding-top: 5vh;
+    padding-top: 10vh;
 }
 
 /* * */
@@ -421,6 +439,83 @@ footer > div {
     gap: 8vw;
 }
 
+
+/* *header */
+
+
+header
+{
+    background-image: url(../images/mobile/image-header.jpg);
+}
+
+nav
+{
+    flex-direction: column;
+    padding-inline: 7vw;
+
+}
+
+
+.logo
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+label>img
+{
+    display: inline;
+}
+
+.links{
+    margin-top: 85vh;
+    gap: 6vh;
+    display: none;
+    padding: 15vh 0vw;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    width: 86vw;
+}
+
+.links>a
+{
+    color: black;
+}
+
+.links>button
+{
+    background-color: yellow;
+    padding: 3vh 10vw;
+}
+button:active{
+    background-color: rgba(255, 255, 0, 0.377);
+    color: rgba(0, 0, 0, 0.247);
+}
+
+.links::before
+{
+    background-image: ;
+}
+
+#ham-button:checked ~ .links {
+        display: flex;
+        align-items: center;
+    }
+
+header>h1
+{
+    padding-top: 15vh;
+    padding-inline: 25vw;
+} 
+header>img
+{
+    padding-top: 20vh;
+}
+
+
+/* * */
 
 
 
