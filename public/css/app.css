@@ -216,6 +216,11 @@ footer > div {
 }
 /* *mid2 */
 
+.position
+{
+    color: rgba(0, 0, 0, 0.37);
+}
+
 .mid2
 {
     display: flex;
@@ -240,7 +245,7 @@ footer > div {
     align-items: center ;
     flex-direction: column;
 
-    gap: 5vh;
+    gap: 10vh;
 }
 
 .clients>div>img
@@ -494,11 +499,6 @@ button:active{
     color: rgba(0, 0, 0, 0.247);
 }
 
-.links::before
-{
-    background-image: ;
-}
-
 #ham-button:checked ~ .links {
         display: flex;
         align-items: center;
@@ -517,7 +517,24 @@ header>img
 
 /* * */
 
+/* *mid2 */
 
+.mid2{
+    padding-block: 10vh;
+}
+
+.clients{
+    flex-direction: column;
+    gap: 15vh;
+}
+.clients >div>img
+{
+    width: 20vw;
+    height: 20vw;
+}
+
+
+/* * */
 
 
 
