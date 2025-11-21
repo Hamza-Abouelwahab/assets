@@ -203,18 +203,23 @@ footer > img {
     
 }
 footer > nav{
-        padding: 6vh 2vw;
-
+    padding: 6vh 2vw;
     display: flex;
     gap: 4vw;
 }
 footer > nav > a{
     color:#2c7566;
 }
+footer > nav > a:hover{
+    color: white;
+}
 footer > div {
     padding-top: 2vw;
     display: flex;
     gap: 3vw;
+}
+footer > div > a:hover{
+    filter: brightness(0) invert(1);
 }
 /* *mid2 */
 
